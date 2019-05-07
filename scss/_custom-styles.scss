@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #e5e5e5;
+}
+
+.main__wrapper {
+  width: 1360px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #1e1e1e;
+}
+
+.header__content {
+  height: 155px;
+  padding-top: 20px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  &--up {
+    display: flex;
+  }
+  h1 {
+    text-transform: uppercase;
+    font-family: "Sports World", sans-serif;
+    font-size: 36px;
+    line-height: 38px;
+    color: #ffffff;
+    span {
+      color: #0fbe98;
+    }
+  }
+}
