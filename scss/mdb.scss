@@ -69,5 +69,11 @@
 // @import "addons/datatables-select";
 // @import "addons/directives";
 
+//Command styles
+@import "./base/base";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./components/social-block-absolute.scss";
+
 // Your custom styles
 @import "custom-styles";
