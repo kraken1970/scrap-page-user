@@ -183,7 +183,9 @@
 /*Tagged Content*/
 .tagged {
   background-color: #ffffff;
-  padding: 0 $gap;
+
+  padding-left: $gap;
+  padding-right: $gap;
 }
 
 .tagged-head {
@@ -192,7 +194,6 @@
   line-height: 29px;
   margin: 0;
   color: #1a051d;
-  padding-top: 30px;
   margin-bottom: 20px;
 }
 
@@ -224,42 +225,4 @@
   margin-bottom: 78px;
 }
 
-.card.articles-card {
-  width: 432px;
-}
-
-.card {
-  border: 0.75px solid #cbd1e0;
-  border-radius: 0px 0px 4px 4px;
-}
-
-.photos-card,
-.videos-card {
-  width: 320px;
-}
-
-.card-body {
-  padding-top: 10px !important;
-}
-
-.card-title {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  color: #1a051d;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-.card-text {
-  font-size: 16px !important;
-  line-height: 22px;
-  color: #727682;
-  margin-bottom: 20px;
-}
-
-.card-buttons {
-  display: flex;
-  justify-content: space-between;
-}
 /*footer: layout/_footer.scss*/
