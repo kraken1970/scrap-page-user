@@ -141,10 +141,10 @@ body {
     }
     .select-pages {
       font-family: "Proxima Nova Semibold", sans-serif;
-      color: #0fbe98;
+      color: #0fbe98 !important;
       font-size: 18px;
       line-height: 22px;
-      background-color: transparent;
+      background-color: transparent !important;
       border: none;
       padding-right: 5px;
       cursor: pointer;
