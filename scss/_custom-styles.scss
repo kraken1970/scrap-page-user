@@ -451,10 +451,18 @@ body {
   height: 270px; /*temp*/
   outline: 1px solid green;
   padding: 35px $gap;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
   &--submit {
     display: flex;
     .submit-text {
       max-width: 432px;
+    }
+    .submit-text {
+      font-size: 16px;
+      line-height: 22px;
     }
     .footer-form {
       display: flex;
@@ -469,6 +477,9 @@ body {
         color: #ffffff;
         border-radius: 4px;
         padding-left: $gap;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: normal;
       }
     }
     margin-bottom: 30px;
@@ -483,6 +494,11 @@ body {
       margin-top: 0;
       margin-bottom: 20px;
     }
+    .copyright {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+    }
   }
   .nav__groups {
     display: flex;
@@ -494,6 +510,20 @@ body {
         width: 207px;
         margin-bottom: 12px;
       }
+    }
+  }
+}
+
+.footer__social {
+  margin-left: $gap;
+  &--text {
+    color: #0fbe98;
+    margin-bottom: 20px;
+  }
+  .social-net a {
+    margin-right: $gap;
+    &:last-child {
+      margin-right: 0;
     }
   }
 }
