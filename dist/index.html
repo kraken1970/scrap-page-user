@@ -29,14 +29,30 @@
             <a class="logotype">Scrap<span>Sports</span></a>
 
             <form class="header__form-block">
-              <select name="" id="" class="header__form-block--select">
+              <!-- <select name="" id="" class="header__form-block--select">
                 <option selected value="All" disabled>All</option>
                 <option value="videos">Videos</option>
                 <option value="photos">Photos</option>
                 <option value="news">News</option>
                 <option value="trivia">Trivia</option>
                 <option value="polls">Polls</option>
-              </select>
+              </select> -->
+              <a
+                class="dropdown-toggle header__form-block--select"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >All</a
+              >
+
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
               <input type="text" name="search" id="" />
               <button type="submit"><i class="fas fa-search"></i></button>
             </form>
@@ -690,34 +706,32 @@
 
             <div class="nav__groups">
               <div class="group group1">
-              <ul>
-                <li><a href="#">Videos</a></li>
-                <li><a href="#">Photos</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Trivia</a></li>
-              </ul>
-            </div>
+                <ul>
+                  <li><a href="#">Videos</a></li>
+                  <li><a href="#">Photos</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Trivia</a></li>
+                </ul>
+              </div>
 
-            <div class="group group2">
-              <ul>
-                <li><a href="#">Playbook</a></li>
-                <li><a href="#">Post</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Help & FAQ</a></li>
-              </ul>
-            </div>
+              <div class="group group2">
+                <ul>
+                  <li><a href="#">Playbook</a></li>
+                  <li><a href="#">Post</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Help & FAQ</a></li>
+                </ul>
+              </div>
 
-            <div class="group group3">
-              <ul>
-                <li><a href="#">Contact us</a></li>
-                <li><a href="#">Advertising</a></li>
-                <li><a href="#">Conditions of use</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-              </ul>
+              <div class="group group3">
+                <ul>
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">Advertising</a></li>
+                  <li><a href="#">Conditions of use</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                </ul>
+              </div>
             </div>
-            </div>
-
-            
 
             <div class="footer__social">
               <p class="footer__social--text">Follow</p>

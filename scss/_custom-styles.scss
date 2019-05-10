@@ -117,9 +117,9 @@ body {
       border: 1px solid #e8e8e8;
       display: flex;
       &--select {
-        font-size: 16px;
-        line-height: 22px;
-        color: #727682;
+        font-size: 16px !important;
+        line-height: 43px !important;
+        color: #727682 !important;
         background-color: #e8e8e8;
         width: 50px;
         border: none;
