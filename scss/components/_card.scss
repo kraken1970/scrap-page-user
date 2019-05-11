@@ -1,4 +1,4 @@
-.card.articles-card {
+.articles-card {
   width: 432px;
 }
 
@@ -35,4 +35,14 @@
 .card-buttons {
   display: flex;
   justify-content: space-between;
+}
+
+.series-card {
+  height: 125px;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: $gap;
+  .series-img-top {
+    height: 100%;
+  }
 }

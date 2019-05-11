@@ -1,8 +1,8 @@
 .success-btn {
-  background: #0fbe98;
+  background: $success;
   border-radius: 4px;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 50px;
   text-transform: uppercase;
   color: #ffffff;
   height: 44px;
@@ -16,9 +16,9 @@
 
 .blank-btn {
   background: transparent;
-  color: #0fbe98;
+  color: $success;
   margin: auto;
-  border: 2px solid #0fbe98;
+  border: 2px solid $success;
 }
 
 .secondary-btn {
@@ -27,7 +27,7 @@
   line-height: 8px;
   color: #ffffff;
   height: 24px;
-  background: #f83371;
+  background: $secondary;
   border-radius: 4px;
   padding-left: $gap !important;
   padding-right: $gap !important;

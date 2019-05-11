@@ -1,4 +1,8 @@
-
+h1,
+h3,
+h4 {
+  color: $headllines;
+}
 
 .social-net {
   display: flex;
@@ -25,7 +29,7 @@
   h1 {
     font-weight: 600;
     font-size: 36px;
-    color: #1a051d;
+
     margin-bottom: 30px;
   }
 }
@@ -169,7 +173,7 @@
   &--title {
     font-size: 18px;
     line-height: 22px;
-    color: #1a051d;
+    color: $headllines;
   }
   &--link {
     font-size: 14px;
@@ -189,5 +193,60 @@
 .videos-cards {
   margin-bottom: 78px;
 }
-
 /*footer: layout/_footer.scss*/
+/*users pages videos page*/
+
+.user-pages {
+  background-color: #ffffff;
+  padding-top: 60px;
+}
+
+.pages-head {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 31px;
+  color: $headllines;
+  margin-bottom: 45px;
+  padding-left: $gap;
+}
+
+.favorites-video {
+  width: 768px;
+}
+
+.all-videos {
+  display: flex;
+  padding-left: $gap;
+  margin-bottom: 70px;
+}
+
+.series-video {
+  width: calc(100% - 768px);
+  background-color: #ecebed;
+  overflow-y: scroll;
+  padding-top: 20px;
+  padding-left: $gap;
+  max-height: 432px;
+  h4 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 20px;
+  }
+}
+
+.recommended {
+  margin-bottom: 70px;
+}
+
+.videos-page-header {
+  h4 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+.editors-choice .block-cards {
+  margin-bottom: 0;
+}

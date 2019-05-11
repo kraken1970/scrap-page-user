@@ -37,9 +37,11 @@ button {
 
 body {
   background: #f4f4f4;
+  color: $body-text;
 }
 
 .main-wrapper {
   width: 1360px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
