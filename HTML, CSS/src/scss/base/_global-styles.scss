@@ -1,0 +1,54 @@
+/* Remove outline on the forms and links */
+* :active,
+:hover,
+:focus,
+input {
+    outline: 0;
+    outline-offset: 0;
+    box-shadow: none;
+}
+
+
+//  Responsive images  // 
+
+* {
+    picture {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        width: 100%;
+
+
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+
+    }
+
+    .image-box {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        background-color: #ccc;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+
+
+}
+
+
+
+
+
+.container {
+    background-color: #fff;
+    max-width: 1360px;
+}

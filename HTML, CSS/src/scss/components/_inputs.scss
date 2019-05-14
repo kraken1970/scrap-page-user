@@ -1,0 +1,138 @@
+//Checkbox
+
+.custom-checkbox {
+    margin-left: 45px;
+    display: inline-block;
+
+    &:hover {
+        .custom-control-label::before {
+            background-color: $neutral-one;
+
+        }
+    }
+
+    .custom-control-input:checked~.custom-control-label::after {
+        background-image: url(../img/icons/inputs/checked.svg);
+
+    }
+
+    .custom-control-input:checked~.custom-control-label::before {
+        background-color: #fff;
+
+    }
+
+    .custom-control-label::before {
+        width: 24px;
+        height: 24px;
+        border: 1px solid #D0C9D6;
+
+    }
+
+    .custom-control-label::after {
+        width: 24px;
+        height: 24px;
+
+    }
+
+}
+
+
+// Radios
+
+.custom-radio {
+
+
+    .custom-control-label::before {
+        border: 2px solid $neutral-one;
+
+    }
+
+    .custom-control-input:checked~.custom-control-label::before {
+        background-color: #fff;
+        border-color: $secondary-green;
+    }
+
+    .custom-control-label::before {
+        border-color: $secondary-green;
+        width: 24px;
+        height: 24px;
+
+
+    }
+
+    .custom-control-label::after {
+        width: 24px;
+        height: 24px;
+    }
+
+    .custom-control-input:checked~.custom-control-label::after {
+        background-image: url(../img/icons/inputs/circular-shape-silhouette.svg);
+
+    }
+}
+
+
+
+.input-dropdown-container {
+    position: relative;
+
+    .input-dropdown {
+        &::-webkit-calendar-picker-indicator {
+            display: none;
+        }
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 0px;
+        height: 0px;
+        top: 21px;
+        right: 9px;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #797979;
+    }
+}
+
+.input-pass-container {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 22px;
+        height: 23px;
+        top: 14px;
+        right: 12px;
+        background-image: url(../img/icons/inputs/eye.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+
+.input {
+    width: 377px;
+    line-height: 44px;
+    height: 44px;
+    box-sizing: border-box;
+    border: 1px solid $border-default;
+    border-radius: 4px;
+    padding-left: 16px;
+
+    &:active,
+    &:focus {
+        border: 1px solid $border-active;
+    }
+
+    &::placeholder {
+        color: $light-text;
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+.was-validated .form-control:invalid {
+    background-image: url(../img/icons/inputs/error.svg);
+}
