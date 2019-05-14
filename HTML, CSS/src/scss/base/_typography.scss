@@ -1,6 +1,95 @@
 @font-face {
-    font-family: ;
-    src: url() format("woff2"),
-        url() format("woff");
+    font-family: 'ProximaNova-Bold';
+    src: url(../../fonts/ProximaNova-Bold.woff) format("woff"),
+        url(../../fonts/ProximaNova-Bold.ttf) format("tff");
     font-display: swap;
+}
+
+@font-face {
+    font-family: 'ProximaNova-Regular';
+    src: url(../../fonts/ProximaNova-Regular.woff) format("woff"),
+        url(../../fonts/ProximaNova-Regular.ttf) format("tff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ProximaNova-Semibold';
+    src: url(../../fonts/ProximaNova-Semibold.woff) format("woff"),
+        url(../../fonts/ProximaNova-Semibold.ttf) format("tff");
+    font-display: swap;
+}
+
+/* Define the "system" font family */
+@font-face {
+    font-family: system;
+    font-style: normal;
+    font-weight: 300;
+    src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+/* Now, let's apply it on an element */
+body {
+    font-family: "system";
+    overflow-anchor: none;
+    background-color: $border-default;
+
+
+}
+
+
+.logo,
+.h3,
+.h4,
+.h5,
+.h6,
+.p-bold,
+.caps-head-big,
+.caps-head-sm,
+.btn-caps {
+    font-family: 'ProximaNova-Semibold';
+}
+
+.logo,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-weight: 600;
+}
+
+.text,
+.h2,
+.text-sm {
+    font-family: 'ProximaNova-Regular';
+}
+
+
+.logo {
+    font-size: 36px;
+
+    line-height: 44px;
+
+}
+
+.h2 {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.h3 {
+    font-size: 28px;
+
+    line-height: 31px;
+}
+
+.h4 {
+    font-size: 24px;
+}
+
+.h5 {
+    font-size: 18px;
+}
+
+.h6 {
+    font-size: 14px;
 }

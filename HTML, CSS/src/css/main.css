@@ -1,0 +1,334 @@
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url(../../fonts/ProximaNova-Bold.woff) format("woff"), url(../../fonts/ProximaNova-Bold.ttf) format("tff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url(../../fonts/ProximaNova-Regular.woff) format("woff"), url(../../fonts/ProximaNova-Regular.ttf) format("tff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ProximaNova-Semibold';
+  src: url(../../fonts/ProximaNova-Semibold.woff) format("woff"), url(../../fonts/ProximaNova-Semibold.ttf) format("tff");
+  font-display: swap;
+}
+
+/* Define the "system" font family */
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+/* Now, let's apply it on an element */
+body {
+  font-family: "system";
+  overflow-anchor: none;
+  background-color: #E8E8E8;
+}
+
+.logo,
+.h3,
+.h4,
+.h5,
+.h6,
+.p-bold,
+.caps-head-big,
+.caps-head-sm,
+.btn-caps {
+  font-family: 'ProximaNova-Semibold';
+}
+
+.logo,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 600;
+}
+
+.text,
+.h2,
+.text-sm {
+  font-family: 'ProximaNova-Regular';
+}
+
+.logo {
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.h2 {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.h3 {
+  font-size: 28px;
+  line-height: 31px;
+}
+
+.h4 {
+  font-size: 24px;
+}
+
+.h5 {
+  font-size: 18px;
+}
+
+.h6 {
+  font-size: 14px;
+}
+
+.category-card {
+  max-width: 320px;
+  min-width: 320px;
+  border-radius: 4px;
+  border: 3px solid #0FBE98;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.category-card .card-body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.category-card .card-body .card-text {
+  color: #727682;
+  min-height: 188px;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.category-card .card-body .btn-catergory {
+  height: 50px;
+}
+
+.custom-checkbox {
+  margin-left: 45px;
+  display: inline-block;
+}
+
+.custom-checkbox:hover .custom-control-label::before {
+  background-color: #ecebed;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: url(../img/icons/inputs/checked.svg);
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #fff;
+}
+
+.custom-checkbox .custom-control-label::before {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #D0C9D6;
+}
+
+.custom-checkbox .custom-control-label::after {
+  width: 24px;
+  height: 24px;
+}
+
+.custom-radio .custom-control-label::before {
+  border: 2px solid #ecebed;
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #fff;
+  border-color: #0FBE98;
+}
+
+.custom-radio .custom-control-label::before {
+  border-color: #0FBE98;
+  width: 24px;
+  height: 24px;
+}
+
+.custom-radio .custom-control-label::after {
+  width: 24px;
+  height: 24px;
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: url(../img/icons/inputs/circular-shape-silhouette.svg);
+}
+
+.input-dropdown-container {
+  position: relative;
+}
+
+.input-dropdown-container .input-dropdown::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.input-dropdown-container::after {
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 0px;
+  top: 21px;
+  right: 9px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #797979;
+}
+
+.input-pass-container {
+  position: relative;
+}
+
+.input-pass-container::after {
+  position: absolute;
+  content: '';
+  width: 22px;
+  height: 23px;
+  top: 14px;
+  right: 12px;
+  background-image: url(../img/icons/inputs/eye.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.input {
+  width: 377px;
+  line-height: 44px;
+  height: 44px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #E8E8E8;
+  border-radius: 4px;
+  padding-left: 16px;
+}
+
+.input:active, .input:focus {
+  border: 1px solid #CBD1E0;
+}
+
+.input::-webkit-input-placeholder {
+  color: #ADAFB6;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.input:-ms-input-placeholder {
+  color: #ADAFB6;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.input::-ms-input-placeholder {
+  color: #ADAFB6;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.input::placeholder {
+  color: #ADAFB6;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.was-validated .form-control:invalid {
+  background-image: url(../img/icons/inputs/error.svg);
+}
+
+/* Remove outline on the forms and links */
+* :active,
+:hover,
+:focus,
+input {
+  outline: 0;
+  outline-offset: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+* picture {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  width: 100%;
+}
+
+* picture img {
+  width: 100%;
+  height: auto;
+}
+
+* .image-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  background-color: #ccc;
+}
+
+* .image-box img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  background-color: #fff;
+  max-width: 1360px;
+}
+
+.trivia-container {
+  padding-top: 66px;
+  padding-bottom: 86px;
+}
+
+.card-deck .row-category-cards {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 32px;
+}
+
+@media screen and (min-width: 578px) {
+  .card-deck .card {
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
